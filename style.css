@@ -1,0 +1,197 @@
+*{
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+}
+
+/* ====================== GLOBAL SCOPE ====================== */
+.title {
+    font-weight: 700;
+    color:black;
+    font-size: 32px;
+    margin: 2rem 0;
+}
+
+.navbar-section, .experiences-section, .projects-section {
+    padding: 2rem;
+    width: 95%;
+    margin: auto;
+}
+
+
+/* ====================== NAVBAR SECTION ====================== */
+.navbar-section {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    color: #787878;
+}
+
+.navbar-section li a{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+}
+
+.navbar-section li a:hover {
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    color: #000000;
+}
+
+.navbar-section .links {
+    display: flex;
+    gap:30px;
+    list-style: none;
+}
+
+.navbar-section .links a {
+    color: #787878;
+}
+
+
+/* ====================== HERO SECTION ====================== */
+.hero-section {
+    padding: 5rem 10rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 50%;
+    background-color: #1B1B19;
+    color: #ddd;
+    height: 100vh;
+}
+
+.hero-section img {
+    width: 500px;
+    height: 500px;
+}
+
+.hero-section .name {
+    font-size: 60px;
+    text-shadow: 0 0 20px white;
+}
+
+.hero-section .info {
+    display: flex;
+    flex-direction: column;
+    gap:1.25rem;
+}
+
+.hero-section .contact-me {
+    background-color: #ddd;
+    padding: 1rem 2rem;
+    align-self: flex-start;
+    color: #222;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    font-weight: 700;
+    color: black;
+}
+
+.hero-section .contact-me:hover {
+    box-shadow: 0 0 20px white;
+}
+
+@media (max-width: 1200px) {
+    .hero-section{
+        display: block;
+        text-align: center;
+    }
+
+    .hero-section .contact-me{
+        align-self: center;
+    }
+
+}
+
+/* ====================== EXPERIENCES SECTION ====================== */
+.experiences-section .experience {
+    padding: 2rem 5rem;
+    color: #ddd;
+    background-color: #222;
+    gap:4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.experiences-section .experience li {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.experiences-section .experience p {
+    line-height: 1.5rem;
+    font-size: 15px;
+}
+
+
+/* ====================== PROJECTS SECTION ====================== */
+.projects-section .cards-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-section .card {
+    border: 1px solid black;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.75rem;
+}
+
+.projects-section .card img {
+    width: 300px;
+    height: 300px;
+}
+
+.projects-section .card .button {
+    background-color: #222;
+    padding:0.75rem 3rem;
+    color: #ddd;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.projects-section .card .button:hover {
+    color: black;
+    border: 1px solid black;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+@media (max-width: 1200px) {
+    .projects-section .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:3rem;
+    }
+
+    .projects-section .card {
+        align-items: center;
+    }
+        
+
+    .projects-section .card img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+/* ====================== FOOTER SECTION ====================== */
+.footer-section {
+    text-align: center;
+    padding:2rem 0;
+    background-color: #222;
+    color: #ddd;
+    margin-top: 5rem;
+}
